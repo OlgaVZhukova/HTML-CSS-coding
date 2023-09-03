@@ -6,3 +6,39 @@
 a {
     text-decoration: none;
 }
+
+.top {
+    padding-top: 40px;
+    padding-bottom: 47px;
+    color: #FFF;
+}
+
+.header {
+    margin-bottom: 84px;
+}
+
+.top__content {
+    padding-bottom: 164px;
+}
+
+.title {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top__logos {
+    margin-top: 38px;
+}
