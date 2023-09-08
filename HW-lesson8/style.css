@@ -13,32 +13,82 @@ body {
 
 .top {
     padding-top: 40px;
-    padding-bottom: 47px;
     color: #FFF;
+}
+
+.nav__link {
+    color: #000;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.nav__link__home {
+    color: #F25822;
+    font-size: 14px;
+    line-height: normal;
 }
 
 .header {
     margin-bottom: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.top__content {
-    padding-bottom: 164px;
+.nav_menu {
+    display: flex;
+    gap: 37px;
+    /* в макете не увидела расстояния между элементами - вычислила, нарисовав линию в макете между элементами */
 }
 
 .title {
     color: #000;
     font-size: 60px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
+    margin-bottom: 17px;
 }
 
 .text {
     color: #888;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
+    width: 466px;
+}
+
+.top__content {
+    padding-bottom: 162px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
+}
+
+.top__info {
+    width: 522px;
+}
+
+.top__button {
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.button {
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    font-size: 15px;
+    color: #FFF;
+    line-height: normal;
+    border: none;
+    padding-top: 15px;
+    padding-right: 36px;
+    padding-bottom: 16px;
+    padding-left: 35px;
+    font-weight: bold;
 }
 
 .top__link {
