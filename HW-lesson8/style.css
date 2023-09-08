@@ -41,6 +41,17 @@ body {
     line-height: normal;
 }
 
+.top__link {
+    height: 19px;
+    font-size: 15px;
+    color: #AAA;
+}
+
 .top__logos {
-    margin-top: 38px;
+    padding-top: 97px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
 }
