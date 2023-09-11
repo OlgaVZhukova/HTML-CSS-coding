@@ -113,6 +113,10 @@ body {
     margin-right: 16px;
     margin-bottom: 15px;
     background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .services__item1 {
@@ -173,6 +177,8 @@ body {
 
 .advantages__content {
     gap: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .advantages__title {
@@ -195,17 +201,24 @@ body {
     text-align: center;
 }
 
-.advantages__item {
+.advantages__item1 {
     width: 370px;
     background: #FFF;
     text-align: center;
     padding: 0 30px 50px;
 }
 
-.advantages__item_shadowed {
+.advantages__item2_shadowed {
     width: 370px;
     background: #FFF;
     box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+    text-align: center;
+    padding: 0 30px 50px;
+}
+
+.advantages__item3 {
+    width: 370px;
+    background: #FFF;
     text-align: center;
     padding: 0 30px 50px;
 }
@@ -216,7 +229,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 21px;
+    margin-top: 25px;
     margin-bottom: 22px;
 }
 
