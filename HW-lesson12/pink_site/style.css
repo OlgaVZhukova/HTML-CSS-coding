@@ -3,12 +3,24 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 .top {
@@ -65,16 +77,23 @@ body {
 .brand__content {
     padding-left: 16px;
     border-left: 12px solid #F16D7F;
-    margin-top: 290px;
-    margin-left: 63px;
+    margin-top: 48%;
 }
 
 .brand__name {
-    font-size: 48px;
     font-style: normal;
     font-weight: 900;
-    line-height: normal;
-    color: #222;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.brand__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
 }
 
 .slogan_left {
@@ -96,9 +115,9 @@ body {
 .categories {
     padding-top: 65px;
     padding-bottom: 96px;
+    display: grid;
     gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .category {
@@ -115,6 +134,11 @@ body {
     width: 100%;
     height: 100%;
     justify-content: center;
+}
+
+.category_big {
+    min-height: 180px;
+    grid-column: 1 / -1;
 }
 
 .category__text {
@@ -232,4 +256,41 @@ body {
 
 .items__button:active {
     transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .brand__content {
+        margin-top: 0;
+    }
+    .brand__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        padding-left: 39px;
+    }
+    .brand__title {
+        min-height: 78px;
+    }
+    .brand__name {
+        font-size: 44px;
+        line-height: normal;
+    }
+    .brand__heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .categories {
+        gap: 19px;
+    }
+    .category_big {
+        min-height: 116px;
+    }
+    .items__content {
+        gap: 16px;
+    }
 }
