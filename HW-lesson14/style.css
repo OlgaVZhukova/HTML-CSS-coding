@@ -328,7 +328,7 @@ summary::-webkit-details-marker {
         grid-template-columns: repeat(1, 1fr);
         gap: 32px;
     }
-    .category_img {
+    .category img {
         width: 100%;
     }
     .category_big {
@@ -343,11 +343,17 @@ summary::-webkit-details-marker {
     .items__content {
         grid-template-columns: repeat(1, 1fr);
     }
+    .item_img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 525px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .item__link {
+        width: 100%;
     }
 }
