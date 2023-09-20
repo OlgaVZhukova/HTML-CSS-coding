@@ -294,3 +294,60 @@ summary::-webkit-details-marker {
         gap: 16px;
     }
 }
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 260px);
+        padding-right: calc(50% - 260px);
+    }
+    .header__nav {
+        display: none;
+    }
+    .brand__img {
+        display: none;
+    }
+    .brand__info {
+        min-height: 363px;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .brand__name {
+        font-size: 38px;
+    }
+    .brand__heading {
+        font-size: 20px;
+    }
+    .slogan_left {
+        font-size: 20px;
+    }
+    .slogan_right {
+        font-size: 20px;
+    }
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+    .category_img {
+        width: 100%;
+    }
+    .category_big {
+        min-height: 111px;
+        background-image: url(img/accessories.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .category_big img {
+        display: none;
+    }
+    .items__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 525px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
