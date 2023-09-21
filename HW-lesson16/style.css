@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.top {
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    min-height: 75px;
+    background: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    gap: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.header__right {
+    gap: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_img {
+    cursor: pointer;
+}
+
+.brand {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+    background: #F1E4E6;
+    display: flex;
+}
+
+.brand__img {
+    width: 50%;
+}
+
+.brand__info {
+    padding-left: 64px;
+}
+
+.brand__content {
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+    margin-top: 48%;
+}
+
+.brand__name {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.brand__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.slogan_left {
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.slogan_right {
+    color: #F16D7F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.categories {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.category {
+    position: relative;
+}
+
+.category__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.category_big {
+    min-height: 180px;
+    grid-column: 1 / -1;
+}
+
+.category__text {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.category__heading {
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.items {
+    padding-bottom: 60px;
+}
+
+.items__heading {
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.items__text {
+    margin-top: 6px;
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.items__content {
+    margin-top: 48px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+}
+
+.item__content {
+    position: relative;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item__description {
+    padding: 24px 16px;
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item__heading {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item__text {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.item__price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.items__button {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__btn {
+    position: absolute;
+    background: #FFF;
+    color: #F26376;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.items__button:hover {
+    opacity: 0.8;
+}
+
+.items__button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .brand__content {
+        margin-top: 0;
+    }
+    .brand__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        padding-left: 39px;
+    }
+    .brand__title {
+        min-height: 78px;
+    }
+    .brand__name {
+        font-size: 44px;
+        line-height: normal;
+    }
+    .brand__heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .categories {
+        gap: 19px;
+    }
+    .category_big {
+        min-height: 116px;
+    }
+    .items__content {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 260px);
+        padding-right: calc(50% - 260px);
+    }
+    .header__nav {
+        display: none;
+    }
+    .brand__img {
+        display: none;
+    }
+    .brand__info {
+        min-height: 363px;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .brand__name {
+        font-size: 38px;
+    }
+    .brand__heading {
+        font-size: 20px;
+    }
+    .slogan_left {
+        font-size: 20px;
+    }
+    .slogan_right {
+        font-size: 20px;
+    }
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+    .category img {
+        width: 100%;
+    }
+    .category_big {
+        min-height: 111px;
+        background-image: url(img/accessories.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .category_big img {
+        display: none;
+    }
+    .items__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item_img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 525px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .item__link {
+        width: 100%;
+    }
+}
