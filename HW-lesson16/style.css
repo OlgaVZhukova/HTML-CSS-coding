@@ -564,6 +564,10 @@ summary::-webkit-details-marker {
     .items__content {
         grid-template-columns: repeat(1, 1fr);
     }
+    .product__add {
+        top: 35%;
+        left: 38%;
+    }
     .advantages {
         gap: 48px;
         display: flex;
