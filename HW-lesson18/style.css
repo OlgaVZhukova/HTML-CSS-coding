@@ -47,6 +47,7 @@ summary::-webkit-details-marker {
     gap: 41px;
     display: flex;
     align-items: center;
+    align-items: flex-end;
 }
 
 .header__right {
@@ -57,6 +58,87 @@ summary::-webkit-details-marker {
 
 .menu_img {
     cursor: pointer;
+}
+
+.header__checkbox {
+    position: absolute;
+    visibility: hidden;
+    left: -9999999px;
+}
+
+.header__checkbox:checked~.mobile-menu {
+    right: 0;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 75px;
+    right: -232px;
+    z-index: 1;
+    transition: right 0.6s;
+    width: 232px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.mobile-menu__link-site {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e8e8e8;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: none;
+}
+
+.mobile-menu__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.mobile-menu__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.mobile-menu__link:hover {
+    color: #F16D7F;
+}
+
+.mobile-menu__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.mobile-menu__list {
+    list-style-type: none;
+    padding-left: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 12px;
+}
+
+.mobile-menu__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
 }
 
 .brand {
@@ -528,6 +610,18 @@ summary::-webkit-details-marker {
     .header__nav {
         display: none;
     }
+    .mobile-menu {
+        width: 50%;
+        right: -50%;
+    }
+    .mobile-menu__link-site {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .header__checkbox:checked~.mobile-menu {
+        right: 0;
+    }
     .brand__img {
         display: none;
     }
@@ -563,6 +657,10 @@ summary::-webkit-details-marker {
     }
     .items__content {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .product__add {
+        top: 35%;
+        left: 38%;
     }
     .advantages {
         gap: 48px;
